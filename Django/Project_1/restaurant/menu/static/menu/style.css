@@ -97,3 +97,99 @@ main {
     text-decoration: none;
     font-weight: bold;
 }
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.food > img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.info h2 {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 8px 0;
+}

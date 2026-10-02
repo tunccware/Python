@@ -1,22 +1,50 @@
 {% extends "base.html" %}
 
 {% block title %}
-Home
+Welcome
 {% endblock %}
 
 {% block content %}
 
 <section class="hero">
 
-    <h1>Welcome to My Restaurant</h1>
+    <h1>Welcome to Our Restaurant</h1>
 
     <p>
-        Fresh ingredients. Delicious food. Great atmosphere.
+        Fresh food, great atmosphere, and a table waiting for you.
     </p>
 
-    <a class="button" href="{% url 'menu:food_list' %}">
-        View Our Menu
-    </a>
+    <div class="hero-buttons">
+
+        <a href="{% url 'menu:food_list' %}">
+            View Our Menu
+        </a>
+
+        <a href="{% url 'menu:reservation' %}">
+            Reserve a Table
+        </a>
+
+    </div>
+
+</section>
+
+<section class="info">
+
+    <h2>Visit Us</h2>
+
+    <p>
+        📍 123 Restaurant Street
+    </p>
+
+    <p>
+        📞 +90 555 123 4567
+    </p>
+
+    <h3>Opening Hours</h3>
+
+    <p>
+        Monday - Sunday: 11:00 - 23:00
+    </p>
 
 </section>
 

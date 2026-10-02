@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Food, Category
+from .models import Food, Category, Reservation
 
 
 @admin.register(Category)
@@ -9,4 +9,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Food)
 class FoodAdmin(admin.ModelAdmin):
-    list_display = ("name", "price", "category")
+    fields = ("name", "price", "description", "image", "category")
+
+admin.site.register(Reservation)

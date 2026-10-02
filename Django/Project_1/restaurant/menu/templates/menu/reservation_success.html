@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+Reservation Confirmed
+{% endblock %}
+
+{% block content %}
+
+<div class="info">
+
+    <h1>Reservation Confirmed!</h1>
+
+    <p>
+        Thank you, {{ reservation.name }}.
+    </p>
+
+    <h2>Your Reservation</h2>
+
+    <p>
+        Date: {{ reservation.date }}
+    </p>
+
+    <p>
+        Time: {{ reservation.time }}
+    </p>
+
+    <p>
+        Guests: {{ reservation.guests }}
+    </p>
+
+    <a href="{% url 'menu:food_list' %}">
+        View Our Menu
+    </a>
+
+</div>
+
+{% endblock %}
